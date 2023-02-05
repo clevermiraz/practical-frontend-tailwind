@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BlinkEye</title>
+        <title>Home-BlinkEye</title>
         <link rel="stylesheet" href="../output/output.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +33,42 @@
                             >BlinkEye</span
                         >
                     </a>
+                    <form>
+                        <div class="relative">
+                            <div
+                                class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none"
+                            >
+                                <svg
+                                    aria-hidden="true"
+                                    class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <input
+                                type="search"
+                                id="default-search"
+                                class="block w-full p-2 pl-8 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Search product..."
+                                required
+                            />
+                            <button
+                                type="submit"
+                                class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </form>
                     <div class="flex sm:order-2">
                         <span
                             class="items-center justify-center mt-3 mr-1 sm:m-0 sm:mr-1 sm:mt-0 cursor-pointer"
@@ -112,72 +148,140 @@
                 </div>
             </nav>
         </header>
-        <!-- Hero Section -->
-        <div class="py-12 pt-20 p-4 lg:px-44">
-            <h1 class="text-4xl font-solit dark:text-teal-50">
-                Future Is Here,
-            </h1>
-            <h2 class="text-3xl font-solit dark:text-white">Start Exploring</h2>
-            <h2 class="text-2xl font-serif text-yellow-600">Now.</h2>
 
-            <p
-                class="text-sm leading-relaxed pt-6 text-blue-800 dark:text-green-400"
-            >
-                We Need Your Location To Find The Best Product For You
-            </p>
-        </div>
-        <!-- simple error meassage -->
-        <div class="flex mb-4 mr-16 justify-end">
+        <!-- banner -->
+        <div class="mt-6">
             <div
-                class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-                role="alert"
+                class="flex overflow-x-scroll pb-10 hide-scroll-bar overflow-y-hidden"
             >
-                <strong class="font-bold">Error!</strong>
-                <span class="block sm:inline"
-                    >Something not good happened.</span
-                >
-                <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-                    <svg
-                        class="fill-current h-6 w-6 text-red-500"
-                        role="button"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                    >
-                        <title>Close</title>
-                        <path
-                            d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"
-                        />
-                    </svg>
-                </span>
+                <div class="flex flex-nowrap lg:ml-40 md:ml-20">
+                    <div class="inline-block px-3">
+                        <div
+                            class="w-56 max-w-xs overflow-hidden rounded-lg shadow-md bg-white border border-green-700"
+                        >
+                            <img src="../images/banner1.avif" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="inline-block px-2">
+                        <div
+                            class="w-56 max-w-xs overflow-hidden rounded-lg shadow-md bg-white border border-green-700"
+                        >
+                            <img src="../images/banner2.avif" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="inline-block px-3">
+                        <div
+                            class="w-56 max-w-xs overflow-hidden rounded-lg shadow-md border border-green-700"
+                        >
+                            <img src="../images/banner1.avif" alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="ml-4 mr-16 lg:pl-44 lg:ml-0 lg:pr-64">
-            <form>
-                <div class="relative">
+        <!-- category -->
+        <div class="mb-7 border border-emerald-700">
+            <div class="container">
+                <div
+                    class="flex gap-2 items-center overflow-x-auto overflow-y-hidden scrollbar"
+                >
                     <div
-                        class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                        class="min-w-full flex items-center gap-2 p-4 border border-teal-800 snap-start"
                     >
-                        <img src="../images/location-marker.png" class="h-5" />
+                        <div
+                            class="bg-fuchsia-400 border border-teal-700 p-2.5 rounded"
+                        >
+                            <img
+                                src="../images/dress.svg"
+                                alt="dress & frock"
+                                width="30"
+                            />
+                        </div>
+
+                        <div class="w-full">
+                            <div
+                                class="flex justify-between items-center mb-2.5"
+                            >
+                                <h3 class="font-medium uppercase">
+                                    Dress & frock
+                                </h3>
+
+                                <p class="text-red-700 text-base">(53)</p>
+                            </div>
+
+                            <a
+                                href="#"
+                                class="text-pink-400 text-base font-medium capitalize"
+                                >Show all</a
+                            >
+                        </div>
                     </div>
-                    <input
-                        type="search"
-                        id="search"
-                        class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50"
-                        placeholder="Search Address ..."
-                        required
-                    />
-                    <button
-                        type="submit"
-                        class="text-white absolute right-2.5 bottom-2.5 bg-slate-100 hover:bg-slate-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+                    <div
+                        class="min-w-full flex items-center gap-2 p-4 border border-teal-800 snap-start"
                     >
-                        <img src="../images/my-location.png" class="h-5" />
-                    </button>
+                        <div
+                            class="bg-fuchsia-400 border border-teal-700 p-2.5 rounded"
+                        >
+                            <img
+                                src="../images/dress.svg"
+                                alt="dress & frock"
+                                width="30"
+                            />
+                        </div>
+
+                        <div class="w-full">
+                            <div
+                                class="flex justify-between items-center mb-2.5"
+                            >
+                                <h3 class="font-medium uppercase">
+                                    Dress & frock
+                                </h3>
+
+                                <p class="text-red-700 text-base">(53)</p>
+                            </div>
+
+                            <a
+                                href="#"
+                                class="text-pink-400 text-base font-medium capitalize"
+                                >Show all</a
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="min-w-full flex items-center gap-2 p-4 border border-teal-800 snap-start"
+                    >
+                        <div
+                            class="bg-fuchsia-400 border border-teal-700 p-2.5 rounded"
+                        >
+                            <img
+                                src="../images/dress.svg"
+                                alt="dress & frock"
+                                width="30"
+                            />
+                        </div>
+
+                        <div class="w-full">
+                            <div
+                                class="flex justify-between items-center mb-2.5"
+                            >
+                                <h3 class="font-medium uppercase">
+                                    Dress & frock
+                                </h3>
+
+                                <p class="text-red-700 text-base">(53)</p>
+                            </div>
+
+                            <a
+                                href="#"
+                                class="text-pink-400 text-base font-medium capitalize"
+                                >Show all</a
+                            >
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <!-- Svg Image that show bottom on mobile screen and right side on large screen -->
-            <div class="py-20 pl-10">
-                <img src="../images/multitasking.svg" class="h-64" />
             </div>
         </div>
 

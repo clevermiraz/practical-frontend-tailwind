@@ -45,4 +45,3 @@ darkMode.addEventListener("click", themeSwitch);
 // invoke theme check on initial load
 themeCheck();
 
-
