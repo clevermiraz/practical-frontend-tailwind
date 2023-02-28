@@ -131,3 +131,4 @@ here are a few additional ideas for your frontend pages:
 -A page for vendors to manage their business profile and settings.
 -A page for admin to manage and approve new delivery persons registration.
 -A page for customers to view and rate their delivery persons after delivery.
+- There Also Have a Pay later month their product

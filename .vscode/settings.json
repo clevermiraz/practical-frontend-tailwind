@@ -1,5 +1,9 @@
 {
     "css.validate": false,
     "tailwindCSS.emmetCompletions": true,
-    "editor.cursorBlinking": "expand"
+    "editor.cursorBlinking": "expand",
+    "editor.fontFamily": "Fira code light",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 23,
 }
