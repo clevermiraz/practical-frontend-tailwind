@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}", "./*.html", "./blinkEye/*.html"],
+    content: [
+        "./src/**/*.{html,js}",
+        "./*.html",
+        "./blinkEye/*.html",
+        "./blockComponents/*.html",
+    ],
     darkMode: "class", // or 'media' or 'class'
     theme: {
         extend: {
@@ -9,7 +14,5 @@ module.exports = {
             },
         },
     },
-    plugins: [
-        require('tailwind-scrollbar')({ nocompatible: true }),
-    ],
+    plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
