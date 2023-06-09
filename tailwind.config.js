@@ -6,6 +6,7 @@ module.exports = {
         "./blinkEye/*.html",
         "./blockComponents/*.html",
         "./chapterclose/*.html",
+        "./paidOffer/*.html",
     ],
     darkMode: "class", // or 'media' or 'class'
     theme: {
